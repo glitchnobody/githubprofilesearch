@@ -1,9 +1,7 @@
-import { booksQueryResolver } from "./books.resolver";
+import { usersQueryResolver } from "./users.resolver";
 
 export const resolvers = {
   Query: {
-    ...booksQueryResolver,
+    ...usersQueryResolver,
   },
 };
-
-  

@@ -1,5 +1,5 @@
 import express from "express";
-import booksRouter from "./books.router";
+import usersRouter from "./users.router";
 
 const router = express.Router();
 
@@ -7,6 +7,6 @@ router.get("/ping", async (req, res) => {
   res.send("Hello world");
 });
 
-router.use("/books", booksRouter);
+router.use("/users", usersRouter);
 
 export default router;

@@ -28,7 +28,9 @@ const main = async () => {
   app.use(Router);
   app.use(cors(), bodyParser.json(), expressMiddleware(server));
 
-  await new Promise((resolve) => httpServer.listen({ port }, () => resolve(undefined)));
+  await new Promise((resolve) =>
+    httpServer.listen({ port }, () => resolve(undefined))
+  );
   console.log(`🚀 Server ready at port ${port}`);
 };
 
